@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUIQuickShotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                FeaturesList()
+            }
         }
     }
 }
