@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D44C1BB295EEC440072BB91 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1BA295EEC440072BB91 /* Feature.swift */; };
 		3DE97FE2295C346400943CFA /* SwiftUIQuickShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE97FE1295C346400943CFA /* SwiftUIQuickShotApp.swift */; };
 		3DE97FE6295C346600943CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE97FE5295C346600943CFA /* Assets.xcassets */; };
 		3DE97FE9295C346600943CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE97FE8295C346600943CFA /* Preview Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D44C1BA295EEC440072BB91 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
 		3DE97FDE295C346400943CFA /* SwiftUIQuickShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIQuickShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE97FE1295C346400943CFA /* SwiftUIQuickShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIQuickShotApp.swift; sourceTree = "<group>"; };
 		3DE97FE5295C346600943CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D44C1B9295EEC360072BB91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D44C1BA295EEC440072BB91 /* Feature.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3DE97FD5295C346400943CFA = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		3DE97FE0295C346400943CFA /* SwiftUIQuickShot */ = {
 			isa = PBXGroup;
 			children = (
+				3D44C1B9295EEC360072BB91 /* Model */,
 				3DE97FF0295C351A00943CFA /* Assets */,
 				3DE97FEF295C350F00943CFA /* Features */,
 				3DE97FF3295C354100943CFA /* FeaturesList.swift */,
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE97FFE295D8C6300943CFA /* Stacks.swift in Sources */,
+				3D44C1BB295EEC440072BB91 /* Feature.swift in Sources */,
 				3DE97FFC295D8A8500943CFA /* FeatureView.swift in Sources */,
 				3DE97FFA295D89AA00943CFA /* FeaturesViewModel.swift in Sources */,
 				3DE97FE2295C346400943CFA /* SwiftUIQuickShotApp.swift in Sources */,

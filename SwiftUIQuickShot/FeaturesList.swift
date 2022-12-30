@@ -29,26 +29,3 @@ struct FeaturesList_Previews: PreviewProvider {
         FeaturesList()
     }
 }
-
-extension FeaturesList {
-    private var stackInfo: some View {
-        Text("VStack")
-    }
-}
-
-struct Feature {
-    let id = UUID().uuidString
-    let title: String
-    let type: FeatureType
-}
-
-enum FeatureType {
-    case stacks
-    case lazyStacks
-    case lazyGrid
-    case forEach
-    case list
-    case group
-    case section
-    case spacer
-}
