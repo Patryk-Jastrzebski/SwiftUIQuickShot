@@ -16,20 +16,11 @@ struct Stacks: View {
     @State var zAlignment: Alignment = .center
     
     @State var state: StackState = .vstack
+    @State var spacing: CGFloat = 0
+    
     var body: some View {
-        VStack {
-            vStackView
-            Spacer()
-            verticalButtons
-            hStackView
-            Spacer()
-            horizontalButtons
-            zStackView
-            Spacer()
-            zButtons
-        }
-        
-        .font(.system(size: 24, weight: .semibold))
+        content
+            .font(.system(size: 24, weight: .semibold))
     }
 }
 
@@ -40,43 +31,63 @@ struct Stacks_Previews: PreviewProvider {
 }
 
 extension Stacks {
-//    private var content: some View {
-//        ZStack {
-//            switch state {
-//            case .vstack:
-//                VStack {
-//                    
-//                }
-//            case .hstack:
-//                VStack {
-//                    
-//                }
-//            case .zstack:
-//                VStack {
-//                    
-//                }
-//            }
-//        }
-//    }
+    private var content: some View {
+        VStack {
+            menu
+            switch state {
+            case .vstack:
+                vStackView
+                verticalButtons
+            case .hstack:
+                hStackView
+                horizontalButtons
+            case .zstack:
+                zStackView
+                zButtons
+            }
+        }
+        .navigationTitle("Stacks")
+    }
+    
+    private var menu: some View {
+        VStack {
+            HStack {
+                button(action: {
+                    withAnimation { state = .vstack }
+                }, name: "VStack")
+                
+                button(action: {
+                    withAnimation { state = .hstack }
+                }, name: "HStack")
+                
+                button(action: {
+                    withAnimation { state = .zstack }
+                }, name: "ZStack")
+            }
+            Slider(value: $spacing, in: 0...100)
+        }
+    }
     
     private var vStackView: some View {
-        VStack(alignment: vAlignment) {
+        VStack(alignment: vAlignment, spacing: spacing) {
             Text("To jest HStack")
             Text("HStack")
             Text("HStack")
             Text("HStack")
         }
+        .background(.gray.opacity(0.2))
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.purple)
     }
     
     private var hStackView: some View {
-        HStack(alignment: hAlignment) {
+        HStack(alignment: hAlignment, spacing: spacing) {
             Text("To jest HStack")
             Text("HStack")
             Text("HStack")
             Text("HStack")
         }
+        .background(.gray.opacity(0.2))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
     private var zStackView: some View {
@@ -86,6 +97,8 @@ extension Stacks {
             Text("ZStack")
             Text("ZStack")
         }
+        .background(.gray.opacity(0.2))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
     private var verticalButtons: some View {
