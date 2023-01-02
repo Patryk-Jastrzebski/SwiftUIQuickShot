@@ -26,7 +26,7 @@ struct FeatureView: View {
         case .section:
             EmptyView()
         case .spacer:
-            EmptyView()
+            SpacerView()
         }
     }
 }

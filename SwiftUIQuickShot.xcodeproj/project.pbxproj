@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D44C1BB295EEC440072BB91 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1BA295EEC440072BB91 /* Feature.swift */; };
+		3D44C1BD295EF7CD0072BB91 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1BC295EF7CD0072BB91 /* SpacerView.swift */; };
+		3D44C1BF295F02100072BB91 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1BE295F02100072BB91 /* LoadingIndicator.swift */; };
+		3D44C1C1295F023D0072BB91 /* SpinnerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1C0295F023D0072BB91 /* SpinnerCircle.swift */; };
+		3D44C1C62962C1320072BB91 /* SpacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44C1C52962C1320072BB91 /* SpacingView.swift */; };
 		3DE97FE2295C346400943CFA /* SwiftUIQuickShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE97FE1295C346400943CFA /* SwiftUIQuickShotApp.swift */; };
 		3DE97FE6295C346600943CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE97FE5295C346600943CFA /* Assets.xcassets */; };
 		3DE97FE9295C346600943CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE97FE8295C346600943CFA /* Preview Assets.xcassets */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		3D44C1BA295EEC440072BB91 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		3D44C1BC295EF7CD0072BB91 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		3D44C1BE295F02100072BB91 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		3D44C1C0295F023D0072BB91 /* SpinnerCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerCircle.swift; sourceTree = "<group>"; };
+		3D44C1C52962C1320072BB91 /* SpacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingView.swift; sourceTree = "<group>"; };
 		3DE97FDE295C346400943CFA /* SwiftUIQuickShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIQuickShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE97FE1295C346400943CFA /* SwiftUIQuickShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIQuickShotApp.swift; sourceTree = "<group>"; };
 		3DE97FE5295C346600943CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +58,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3D44C1C2295F02490072BB91 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D44C1C3295F024D0072BB91 /* LoadingIndicator */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D44C1C3295F024D0072BB91 /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				3D44C1C0295F023D0072BB91 /* SpinnerCircle.swift */,
+				3D44C1BE295F02100072BB91 /* LoadingIndicator.swift */,
+			);
+			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		3D44C1C42962C0670072BB91 /* Spacer */ = {
+			isa = PBXGroup;
+			children = (
+				3D44C1BC295EF7CD0072BB91 /* SpacerView.swift */,
+				3D44C1C52962C1320072BB91 /* SpacingView.swift */,
+			);
+			path = Spacer;
+			sourceTree = "<group>";
+		};
 		3DE97FD5295C346400943CFA = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +103,7 @@
 		3DE97FE0295C346400943CFA /* SwiftUIQuickShot */ = {
 			isa = PBXGroup;
 			children = (
+				3D44C1C2295F02490072BB91 /* Helpers */,
 				3D44C1B9295EEC360072BB91 /* Model */,
 				3DE97FF0295C351A00943CFA /* Assets */,
 				3DE97FEF295C350F00943CFA /* Features */,
@@ -91,6 +126,7 @@
 		3DE97FEF295C350F00943CFA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3D44C1C42962C0670072BB91 /* Spacer */,
 				3DE97FFB295D8A8500943CFA /* FeatureView.swift */,
 				3DE97FFD295D8C6300943CFA /* Stacks.swift */,
 				3DE97FFF295D8C7200943CFA /* List.swift */,
@@ -176,11 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D44C1BF295F02100072BB91 /* LoadingIndicator.swift in Sources */,
 				3DE97FFE295D8C6300943CFA /* Stacks.swift in Sources */,
 				3D44C1BB295EEC440072BB91 /* Feature.swift in Sources */,
 				3DE97FFC295D8A8500943CFA /* FeatureView.swift in Sources */,
 				3DE97FFA295D89AA00943CFA /* FeaturesViewModel.swift in Sources */,
+				3D44C1C62962C1320072BB91 /* SpacingView.swift in Sources */,
+				3D44C1BD295EF7CD0072BB91 /* SpacerView.swift in Sources */,
 				3DE97FE2295C346400943CFA /* SwiftUIQuickShotApp.swift in Sources */,
+				3D44C1C1295F023D0072BB91 /* SpinnerCircle.swift in Sources */,
 				3DE97FF4295C354100943CFA /* FeaturesList.swift in Sources */,
 				3DE98000295D8C7200943CFA /* List.swift in Sources */,
 			);
