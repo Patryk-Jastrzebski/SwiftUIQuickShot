@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SpacerView: View {
-    @State var isLoading: Bool = false
+    @State var isLoadingDynamicHeight: Bool = false
+    @State var isLoadingStaticHeight: Bool = false
     
     var body: some View {
         // Prezentacja różnic paddingu, frame i spacera - oraz faktu że kolejność modifierów ma duże znaczenie
@@ -19,6 +20,8 @@ struct SpacerView: View {
             frameButtonAll
             frameButtonNotAll
             frameButton
+            Spacer()
+            spacerView
         }
         .foregroundColor(.white)
     }
@@ -31,9 +34,22 @@ struct SpacerView_Previews: PreviewProvider {
 }
 
 extension SpacerView {
+    private var spacerView: some View {
+        NavigationLink {
+            SpacingView()
+        } label: {
+            Text("Spacer")
+                .foregroundColor(.primary)
+                .frame(width: 200, height: 55)
+                .background(.secondary)
+                .cornerRadius(10)
+        }
+    }
+    
     private var toggleLoading: some View {
-        HStack {
-            Toggle("isLoading", isOn: $isLoading)
+        VStack {
+            Toggle("isLoading Padding", isOn: $isLoadingDynamicHeight)
+            Toggle("isLoading Frame", isOn: $isLoadingStaticHeight)
         }
         .padding(.horizontal)
     }
@@ -42,7 +58,7 @@ extension SpacerView {
         Button {
             
         } label: {
-            if isLoading {
+            if isLoadingDynamicHeight {
                 LoadingIndicator()
             } else {
                 Text("Padding")
@@ -62,7 +78,7 @@ extension SpacerView {
         } label: {
             HStack {
                 Spacer()
-                if isLoading {
+                if isLoadingDynamicHeight {
                     LoadingIndicator()
                 } else {
                     Text("SpacerButton")
@@ -81,7 +97,7 @@ extension SpacerView {
             
         } label: {
             Group {
-                if isLoading {
+                if isLoadingStaticHeight {
                     LoadingIndicator()
                 } else {
                     Text("FrameButton")
