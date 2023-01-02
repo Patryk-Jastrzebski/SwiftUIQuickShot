@@ -54,7 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		3D44C1B9295EEC360072BB91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +86,8 @@
 				3D44C1C52962C1320072BB91 /* SpacingView.swift */,
 			);
 			path = Spacer;
-=======
+            sourceTree = "<group>";
+        };
 		18A5680F2962E5A70026C469 /* LazyGrids */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +95,6 @@
 				18A568102962E5C60026C469 /* LazyGridsViewModel.swift */,
 			);
 			path = LazyGrids;
->>>>>>> 527f2c3 (implemented lazy vgrid)
 			sourceTree = "<group>";
 		};
 		3DE97FD5295C346400943CFA = {
@@ -227,11 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				3D44C1BF295F02100072BB91 /* LoadingIndicator.swift in Sources */,
-=======
 				18A568112962E5C60026C469 /* LazyGridsViewModel.swift in Sources */,
->>>>>>> 527f2c3 (implemented lazy vgrid)
 				3DE97FFE295D8C6300943CFA /* Stacks.swift in Sources */,
 				3D44C1BB295EEC440072BB91 /* Feature.swift in Sources */,
 				3DE97FFC295D8A8500943CFA /* FeatureView.swift in Sources */,
