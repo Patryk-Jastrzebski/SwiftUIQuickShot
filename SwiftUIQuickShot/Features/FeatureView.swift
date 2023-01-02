@@ -16,7 +16,7 @@ struct FeatureView: View {
         case .lazyStacks:
             EmptyView()
         case .lazyGrid:
-            EmptyView()
+            LazyGrids()
         case .forEach:
             EmptyView()
         case .list:
