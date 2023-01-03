@@ -10,10 +10,8 @@ import SwiftUI
 struct PlaceCell: View {
     let place: Place
     
-    
-    
     var body: some View {
-        HStack(alignment: .bottom){
+        HStack(alignment: .bottom) {
             VStack {
                 Image(place.imageName)
                     .cornerRadius(10, antialiased: true)
@@ -24,6 +22,7 @@ struct PlaceCell: View {
                 .font(.system(size: 12))
         }
         .padding(.horizontal, 5)
+        .listRowSeparator(.hidden)
     }
 }
 

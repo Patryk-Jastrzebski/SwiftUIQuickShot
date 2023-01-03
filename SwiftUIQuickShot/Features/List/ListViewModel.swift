@@ -9,7 +9,7 @@ import SwiftUI
 
 final class ListViewModel: ObservableObject {
     enum State {
-        case defaultList, swipeActionsList
+        case defaultList, swipeActionsList, style
     }
     
     @Published var state: State = .defaultList

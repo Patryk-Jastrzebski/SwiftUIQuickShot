@@ -18,8 +18,9 @@ struct ListView: View {
                 defaultList
             case .swipeActionsList:
                 swipeActions
+            case .style:
+                styledList
             }
-            
         }
     }
     
@@ -47,6 +48,12 @@ private extension ListView {
                 viewModel.state = .swipeActionsList
             } label: {
                 Text("SwipeActions")
+            }
+            Divider()
+            Button {
+                viewModel.state = .style
+            } label: {
+                Text("Styles")
             }
         }
     }
@@ -94,5 +101,9 @@ private extension ListView {
                 EditButton()
             }
         }
+    }
+    
+    private var styledList: some View {
+        StyledList()
     }
 }
