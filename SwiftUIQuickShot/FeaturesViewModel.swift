@@ -10,6 +10,7 @@ import Foundation
 class FeaturesViewModel: ObservableObject {
     let features: [Feature] = [
         Feature(title: "Stacks", type: .stacks),
+        Feature(title: "List", type: .list),
         Feature(title: "LazyStacks", type: .lazyStacks),
         Feature(title: "LazyHGrid and LazyVGrid", type: .lazyGrid),
         Feature(title: "ForEach", type: .forEach),
