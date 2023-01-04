@@ -22,9 +22,7 @@ struct FeatureView: View {
         case .list:
             ListView()
         case .group:
-            EmptyView()
-        case .section:
-            EmptyView()
+            Groups()
         case .spacer:
             SpacerView()
         }
