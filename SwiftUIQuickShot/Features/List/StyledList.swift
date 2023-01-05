@@ -41,7 +41,6 @@ struct StyledList: View {
                         PlaceCell(place: place)
                         PlaceCell(place: place)
                     }
-                        
                 }
                     .listStyle(styleState)
             )
