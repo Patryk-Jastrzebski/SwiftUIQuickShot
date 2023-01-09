@@ -174,13 +174,13 @@
 		3DE97FEF295C350F00943CFA /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18FC8956296591A200978246 /* Groups.swift */,
 				3D44C1C72962DA160072BB91 /* List */,
 				3D44C1C42962C0670072BB91 /* Spacer */,
 				3DE97FFB295D8A8500943CFA /* FeatureView.swift */,
 				3DE97FFD295D8C6300943CFA /* Stacks.swift */,
 				18A5680F2962E5A70026C469 /* LazyGrids */,
 				18FC895329643A7C00978246 /* ForEach */,
-				18FC8956296591A200978246 /* Groups.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";

@@ -60,7 +60,7 @@ extension Groups {
                 Image(systemName: "terminal")
             }
             .font(.system(size: 50))
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
@@ -72,27 +72,28 @@ extension Groups {
         VStack {
             Text("Separate")
                 .font(.system(size: 32))
+                .foregroundColor(.primary)
             Image(systemName: "pencil")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "scribble")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "lasso")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "folder")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "paperplane")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "doc")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
             Image(systemName: "terminal")
                 .font(.system(size: 50))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
@@ -120,7 +121,7 @@ extension Groups {
                 Image(systemName: "terminal")
             }
             .font(.system(size: 50))
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
         }
         .frame(minWidth: 0,
                maxWidth: .infinity,
