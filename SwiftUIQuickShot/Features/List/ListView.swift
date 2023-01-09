@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     @StateObject var viewModel = ListViewModel()
+    
     var body: some View {
         VStack {
             topSection
@@ -64,8 +65,14 @@ private extension ListView {
             ForEach(viewModel.places, id: \.id) { model in
                 PlaceCell(place: model)
             }
+            .onMove { indexSet, index in
+                viewModel.places.move(fromOffsets: indexSet, toOffset: index)
+            }
             .onDelete(perform: remove)
             .deleteDisabled(viewModel.isDeleteDisabled)
+        }
+        .refreshable {
+            print("test")
         }
         .toolbar {
             if !viewModel.isDeleteDisabled {
