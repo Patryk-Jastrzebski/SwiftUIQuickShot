@@ -20,6 +20,5 @@ enum FeatureType {
     case forEach
     case list
     case group
-    case section
     case spacer
 }

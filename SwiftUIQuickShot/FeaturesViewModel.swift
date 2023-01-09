@@ -14,7 +14,6 @@ class FeaturesViewModel: ObservableObject {
         Feature(title: "LazyStacks", type: .lazyStacks),
         Feature(title: "LazyHGrid and LazyVGrid", type: .lazyGrid),
         Feature(title: "ForEach", type: .forEach),
-        Feature(title: "Section", type: .section),
         Feature(title: "Group, GroupBox", type: .group),
         Feature(title: "Spacer and Frame", type: .spacer)
     ]
